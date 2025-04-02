@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# npm test # Commented out for now
+echo "Skipping pre-commit tests."
+exit 0 # Ensure hook succeeds even if tests are skipped

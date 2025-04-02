@@ -1,0 +1,16 @@
+# Ignore artifacts:
+node_modules
+.next
+
+# Ignore database file:
+dev.db
+
+# Ignore configuration files usually handled differently:
+package-lock.json
+
+# Ignore build outputs:
+/dist
+/build
+
+# Ignore documentation (optional, depends on preference):
+/docs/**/*.md 

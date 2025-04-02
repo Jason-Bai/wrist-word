@@ -9,27 +9,27 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "Next.js 15 新特性解析",
+    title: 'Next.js 15 新特性解析',
     excerpt:
-      "探索 Next.js 15 带来的重大更新，包括改进的服务器组件、更快的构建速度和更好的开发体验。",
-    date: "2024-03-20",
-    category: "技术",
+      '探索 Next.js 15 带来的重大更新，包括改进的服务器组件、更快的构建速度和更好的开发体验。',
+    date: '2024-03-20',
+    category: '技术',
   },
   {
     id: 2,
-    title: "TypeScript 5.0 最佳实践",
+    title: 'TypeScript 5.0 最佳实践',
     excerpt:
-      "深入了解 TypeScript 5.0 的新功能，以及如何在实际项目中应用这些特性来提高代码质量。",
-    date: "2024-03-18",
-    category: "编程",
+      '深入了解 TypeScript 5.0 的新功能，以及如何在实际项目中应用这些特性来提高代码质量。',
+    date: '2024-03-18',
+    category: '编程',
   },
   {
     id: 3,
-    title: "现代前端开发趋势",
+    title: '现代前端开发趋势',
     excerpt:
-      "探讨 2024 年前端开发的最新趋势，包括框架选择、性能优化、开发工具等多个方面。",
-    date: "2024-03-15",
-    category: "行业",
+      '探讨 2024 年前端开发的最新趋势，包括框架选择、性能优化、开发工具等多个方面。',
+    date: '2024-03-15',
+    category: '行业',
   },
 ];
 

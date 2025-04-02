@@ -1,21 +1,21 @@
-"use client";
+'use client';
 
-import Button from "@/components/ui/Button";
-import { FormEvent, useState } from "react";
+import Button from '@/components/ui/Button';
+import { FormEvent, useState } from 'react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
   });
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // 这里添加表单提交逻辑
-    console.log("Form submitted:", formData);
-    alert("消息已发送！我们会尽快回复您。");
+    console.log('Form submitted:', formData);
+    alert('消息已发送！我们会尽快回复您。');
   };
 
   return (
