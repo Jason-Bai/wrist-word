@@ -17,12 +17,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow">
+    <header className="bg-card shadow border-b border-border">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 justify-between">
           <div className="flex">
             <div className="flex flex-shrink-0 items-center">
-              <Link href="/" className="text-xl font-bold text-gray-900">
+              <Link href="/" className="text-xl font-bold text-foreground">
                 Wrist Word
               </Link>
             </div>
@@ -33,8 +33,8 @@ const Header = () => {
                   href={item.href}
                   className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                     pathname === item.href
-                      ? 'border-primary text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      ? 'border-primary text-foreground'
+                      : 'border-transparent text-muted-foreground hover:border-gray-700 hover:text-foreground'
                   }`}
                 >
                   {item.name}
@@ -44,15 +44,15 @@ const Header = () => {
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
             {status === 'loading' ? (
-              <div className="h-5 w-20 animate-pulse rounded bg-gray-200"></div>
+              <div className="h-5 w-20 animate-pulse rounded bg-muted"></div>
             ) : session ? (
               <>
                 <Link
                   href="/dashboard"
                   className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                     pathname === '/dashboard'
-                      ? 'border-primary text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      ? 'border-primary text-foreground'
+                      : 'border-transparent text-muted-foreground hover:border-gray-700 hover:text-foreground'
                   }`}
                 >
                   仪表盘
@@ -61,6 +61,7 @@ const Header = () => {
                   variant="ghost"
                   size="sm"
                   onClick={() => signOut({ callbackUrl: '/' })}
+                  className="text-muted-foreground hover:text-foreground"
                 >
                   退出登录
                 </Button>
@@ -71,8 +72,8 @@ const Header = () => {
                   href="/login"
                   className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                     pathname === '/login'
-                      ? 'border-primary text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      ? 'border-primary text-foreground'
+                      : 'border-transparent text-muted-foreground hover:border-gray-700 hover:text-foreground'
                   }`}
                 >
                   登录
@@ -81,8 +82,8 @@ const Header = () => {
                   href="/register"
                   className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium ${
                     pathname === '/register'
-                      ? 'border-primary text-gray-900'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                      ? 'border-primary text-foreground'
+                      : 'border-transparent text-muted-foreground hover:border-gray-700 hover:text-foreground'
                   }`}
                 >
                   注册

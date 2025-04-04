@@ -17,16 +17,19 @@ export default function DashboardPage() {
   }, [session, status, router]);
 
   if (status === 'loading') {
-    return <p className="text-center mt-10">加载中...</p>;
+    return <p className="text-center mt-10 text-muted-foreground">加载中...</p>;
   }
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold mb-4">欢迎来到仪表盘</h1>
+      <div className="bg-card p-6 rounded-lg shadow-md border border-border">
+        <h1 className="text-3xl font-bold mb-4 text-foreground">
+          欢迎来到仪表盘
+        </h1>
         {session?.user && (
-          <p className="mb-4">
-            您已使用邮箱登录: <strong>{session.user.email}</strong>
+          <p className="mb-4 text-muted-foreground">
+            您已使用邮箱登录:{' '}
+            <strong className="text-foreground">{session.user.email}</strong>
           </p>
         )}
         <Button
